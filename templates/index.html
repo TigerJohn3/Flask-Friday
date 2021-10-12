@@ -1,0 +1,27 @@
+<h1>Hey, how are ya?</h1>
+
+<p>This is my first webpage!</p>
+
+<p>This is cool ain't it!?</p>
+
+<p>My name is {{ first_name }}</p>
+
+<p>{{ stuff|safe }}</p>
+
+<h3>Great States</h3>
+
+{% for state in great_states %}
+
+  {% if state == 'South Dakota' %}
+    {{ state }} - the most deceptively beautiful state in the country. <br/>
+  {% else %}
+    {{ state }} <br/>
+  {% endif %}
+
+{% endfor %}
+
+<br/><br/>
+
+My home state is {{ great_states.0 }}
+<br/>
+I currently live in {{ great_states.1 }}
