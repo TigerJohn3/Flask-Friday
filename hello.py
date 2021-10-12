@@ -20,7 +20,7 @@ app = Flask(__name__)
 
 def index():
     first_name = 'John'
-    stuff = 'This is <strong>Bold</strong> text'
+    stuff = 'This is incredibly <strong>Bold</strong> text'
 
     great_states = ['Pennsylvania', 'Arizona', 'South Dakota', 'Utah']
     return render_template('index.html',
